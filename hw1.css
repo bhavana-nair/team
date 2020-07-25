@@ -1,0 +1,144 @@
+header{
+  background:#B3B3B3;
+   background-image: url('../images/flywheel.jpg');
+    background-size:cover; 
+
+   height:  500% ;
+    padding: 5%;
+}
+
+h1{
+  color: #ffffff; 
+  text-align: center;
+  text-transform: uppercase;
+   padding: 2%;
+}
+nav a {
+  background:#B3B3B3;
+  border-radius: 10%;
+  color: #044400;
+  text-decoration: none;
+  margin: 8% ;
+  padding: 2% ;
+}
+
+.active {
+  color: #ed0000;
+   background:  #000000; 
+}
+
+.left {
+  background:  #03B300; 
+  float: left;
+  display: inline-block;
+  width:  18% ;
+  padding:2% ;
+}
+
+img {
+  display: block;
+  border: 2px solid #000000;
+  width:  80% ;
+  height:  100% ;
+  margin: 8% ;
+}
+
+.right {
+   float: right;
+   display: inline-block; 
+   margin: 4% ;
+  width:  65% ;
+   padding:2% ;
+}
+
+h2{
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*Set the table color, border, and spacing...*/
+table{
+	color:#06425C;
+	border-spacing: 0;
+	border: 3px solid black;
+	-webkit-border-radius: 25px 25px 0 0;
+	border-radius: 0 0 25px 25px;
+}
+
+/*To curve the bottom, we need to curve the
+row and the element.  And each element needs to 
+curve a different corner.*/
+tr:last-child{
+	-webkit-border-radius: 25px 25px 0 0;
+	border-radius: 0 0 25px 25px;	
+}
+tr:last-child>td:first-child {
+	-webkit-border-radius: 0 0 0 25px;
+	border-radius: 0 0 0 25px;	
+}
+
+tr:last-child>td:last-child{
+	-webkit-border-radius: 0 0 25px 0;
+	border-radius: 0 0 25px 0;	
+}
+
+/*Format the caption
+Use border-radius for just some corners*/
+
+
+/*Format common heading and element attributes*/
+.cal th, .cal td{
+	margin: 2px;
+	padding-bottom: 2px;
+}
+
+
+/*Format the table headings*/
+th{
+	margin: 2px;
+	padding-bottom: 2px;
+	text-align: center;
+	background: #FF555F;
+}
+
+/*Set the size and alignment for elements*/
+.cal td{
+	width:75px;
+	height:75px;
+	vertical-align:top;
+
+}
+
+/*Format any holidays*/
+.holiday{
+	margin:0;
+	padding:0;
+	background-color: #51A39D;
+}
+
+/*Use a background image*/
+.old{
+	padding:0;
+	margin: 0;
+	background-color: #51A39D;
+	color:rgba(0,0,0,.25);
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/holiday.png") no-repeat;
+  border-spacing: 0;
+  
+  /*This is the code used in the example*/
+/*	background: url("../imgs/holiday.png") no-repeat;
+*/	
+}
+
+/*By default, hide the appointments*/
+span{
+	display: block;
+	text-align: center;
+	color: #800000;
+	visibility: hidden;
+}
+
+/*Show the appointments when the date is clicked on*/
+td:active>span{
+	visibility:visible;
+}
